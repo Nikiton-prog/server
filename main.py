@@ -19,5 +19,11 @@ def index2():
         return stream.read()
 
 
+@app.route('/astronaut_selection')
+def index3():
+    with open('templates/index2.html', 'r', encoding='utf-8') as stream:
+        return stream.read()
+
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080)
