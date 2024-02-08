@@ -13,16 +13,11 @@ def index1():
     return 'И на Марсе будут яблони цвести!'
 
 
-@app.route('/promotion')
+@app.route('/promotion_image')
 def index2():
     with open('templates/index.html', 'r', encoding='utf-8') as stream:
         return stream.read()
 
-
-@app.route('/image_mars')
-def index3():
-    with open('templates/index1.html', 'r', encoding='utf-8') as stream:
-        return stream.read()
 
 
 if __name__ == '__main__':
